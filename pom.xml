@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rpshjha</groupId>
+  <artifactId>java-problems</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>Java sample practice questions</name>
+  
+  <build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFiles>testng.xml</suiteXmlFiles>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<properties>
+		<log4j.version>1.2.17</log4j.version>
+		<restassured.version>4.2.0</restassured.version>
+		<jackson.databind.version>2.10.2</jackson.databind.version>
+		<cucumber.version>6.8.1</cucumber.version>
+		<selenium.version>4.0.0-alpha-6</selenium.version>
+		<webdrivermanager.version>3.8.1</webdrivermanager.version>
+		<testng.version>7.1.0</testng.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+	
+</project>
